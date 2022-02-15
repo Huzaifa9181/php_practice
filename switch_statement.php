@@ -68,7 +68,7 @@ case ($age >= 21 && $age <= 30):
     break;
 
 default:
-    echo "Enter a Valid Age";
+    echo "<br> Enter a Valid Age";
 
 }
 
