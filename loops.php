@@ -45,5 +45,31 @@ for ( $a = 1; $a <= 100; $a = $a +10){
     echo "<br>";
 }
 
+// for each loop
+
+$colors = ["red","green","blue","purple"];
+
+foreach($colors as $data){
+    echo $data . "<br>";
+}
+
+// associative array
+
+$marks = [
+    "math" => 82,
+    "comp" => 88,
+    "phy" => 92,
+    "sindhi" => 72
+];
+
+foreach($marks as $key => $value){
+    echo "$key = $value <br>";
+}
+
+echo "<ul>";
+foreach($marks as $key => $value){
+    echo "<li> $key = $value <br> </li>";
+}
+echo "</ul>";
 
 ?>

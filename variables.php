@@ -25,5 +25,19 @@
     echo name;
     define("num",550);
     echo num;
+    echo "<br>";
 
+    // global variable
+
+    $x = 6;
+    $y = 9;
+
+    function str(){
+        global $x , $y; // global is important to write for using global variable
+        $x = $x + $y;
+    }
+
+    str();
+
+    echo $x;
 ?>
