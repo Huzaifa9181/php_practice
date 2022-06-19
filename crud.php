@@ -31,21 +31,12 @@
         }
     }
 
-    if($_GET['delete'] == true){
-        $id= $_GET['delete'];
-        echo $id;
-        $q = "DELETE FROM notes WHERE `s.no` = $id";
-        mysqli_query($connection,$q);
-
+    if(isset($_GET['delete']) && !empty($_GET['delete'])){
+      $a = $_GET['delete'];
+      $q = "DELETE FROM notes WHERE `s.no` = $a";
+      mysqli_query($connection,$q);
     }
 
-
-    // if (isset( ($_GET['delete']) && !empty($_GET['delete']) )) {
-
-    //     $del = "DELETE FROM notes WHERE `s.no` = $_GET['delete']";
-    //     mysqli_query($connection,$del);
-    // }
-    //var_dump($_GET['delete']);die;
 ?>
 
     <!doctype html>
